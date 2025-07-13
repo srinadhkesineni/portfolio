@@ -1,0 +1,62 @@
+.skills-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.skills-section p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+/* ========== SKILLS GRID USING FLEXBOX ========== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* Ensures last row is centered */
+  gap: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ========== SKILL CARD ========== */
+.skill-card {
+  background-color: #1a1a1a;
+  width: 120px;                 /* Fixed width for alignment */
+  height: 130px;                /* Consistent height */
+  padding: 1rem 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* ========== ICON INSIDE SKILL CARD ========== */
+.skill-card img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.5rem;
+  filter: brightness(0) invert(1); /* Converts dark icons to white */
+}
+
+/* ========== TEXT INSIDE SKILL CARD ========== */
+.skill-card p {
+  font-size: 0.85rem;
+  color: white;
+  margin: 0;
+}
