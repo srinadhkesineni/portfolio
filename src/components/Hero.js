@@ -6,9 +6,13 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
   return (
-    <section className="hero-container">
+    <section id="about" className="hero-container">
       <div className="hero-card">
-        <img src="/profile.jpg" alt="Ariful Alam" className="profile-img" />
+        <img
+          src="/profile.jpg"
+          alt="Srinadh Kesineni"
+          className="profile-img"
+        />
         <h2>Srinadh Kesineni</h2>
         <div className="title-location">
           <div className="title">
@@ -22,25 +26,63 @@ function Hero() {
         </div>
 
         <p className="description">
-          Senior Software Engineer with over 6 years of experience architecting
-          and implementing scalable distributed systems. Demonstrated expertise
-          in building resilient microservices using Node.js, while maintaining
-          robust performance at scale. Proficient in JavaScript, TypeScript,
-          NestJS, and React, with a strong focus on designing fault-tolerant
-          architectures and optimizing system performance.
+          Software Engineer with experience architecting and implementing
+          scalable distributed systems. Demonstrated expertise in building
+          resilient microservices using Node.js while maintaining robust
+          performance at scale. Proficient in JavaScript, TypeScript, and React,
+          with a strong focus on fault-tolerant architecture and system
+          optimization. Experienced in DevOps practices including CI/CD
+          pipelines, Docker, and container orchestration. Regular competitive
+          programmer with a passion for solving complex problems and a
+          commitment to continuous learning and growth in tech.
         </p>
         <div className="buttons">
           <button className="blog-btn">See My Blog</button>
-          <button className="contact-btn">Get In Touch</button>
+          {/* <button className="contact-btn"> */}
+          {/* <a href="#contact"> */}
+          {/* Get In Touch */}
+          {/* </a> */}
+          {/* </button> */}
         </div>
         <div className="social-icons">
-          <i className="fab fa-github"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-dev"></i>
-          <i className="fab fa-medium"></i>
-          <i className="fas fa-envelope"></i>
+          <a
+            href="https://github.com/srinadhkesineni"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/srinadh-kesineni-623958264/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://dev.to/srinadh777"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-dev"></i>
+          </a>
+          <a
+            href="https://medium.com/@srinadhkesineni7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-medium"></i>
+          </a>
+          <a href="mailto:srinadhkesineni7@gmail.com">
+            <i className="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
     </section>

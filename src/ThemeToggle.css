@@ -1,0 +1,30 @@
+.toggle-container {
+  width: 70px;
+  height: 36px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+.icon-wrapper {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper.active {
+  background-color: #eee;
+  color: black;
+}

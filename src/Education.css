@@ -1,0 +1,100 @@
+.education-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.education-section h2 {
+  font-size: 2.0rem;
+  margin-bottom: 0.2rem;
+}
+
+.education-section p {
+  font-size: rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.education-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.education-item:hover {
+  background-color: #1a1a1a;
+}
+
+.education-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.edu-icon {
+  color: whitesmoke;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.edu-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.institution {
+  color: #747272;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.education-right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.education-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background-color: #191919;
+  padding: 0 0.1rem;
+  font-size: 0.85rem;
+  text-align: left;
+  color: #ddd;
+}
+
+.education-details.open {
+  max-height: 90px; 
+  padding: 0rem 3.2rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #333;
+  margin: 0 1.2rem;
+}

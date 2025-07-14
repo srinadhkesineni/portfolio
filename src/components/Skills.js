@@ -3,7 +3,7 @@ import { skillsData } from "./SkillsData"; // update path if needed
 
 function SkillsSection() {
   return (
-    <section className="skills-section">
+    <section id="skills" className="skills-section">
       <h2>Skills</h2>
       <p>Technologies and tools I work with</p>
       <div className="skills-grid">

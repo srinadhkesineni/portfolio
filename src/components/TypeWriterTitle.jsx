@@ -4,7 +4,9 @@ const titles = [
   "Software Engineer",
   "MERN Stack Developer",
   "Open Source Contributor",
-  "Tech Enthusiast"
+  "Tech Enthusiast",
+  "DevOps Advocate",
+  "Competitive Programmer",
 ];
 
 const TypewriterTitle = () => {

@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .skills-section {
   text-align: center;
   padding: 2rem 1rem;
@@ -21,7 +26,7 @@
   flex-wrap: wrap;
   justify-content: center;      /* Ensures last row is centered */
   gap: 1.2rem;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -31,9 +36,9 @@
   background-color: #1a1a1a;
   width: 120px;                 /* Fixed width for alignment */
   height: 130px;                /* Consistent height */
-  padding: 1rem 0.5rem;
+  padding: 0rem 0.5rem;
   border-radius: 12px;
-  border: 1px solid #444;
+  border: 1px solid rgb(80, 80, 105);
   color: white;
   display: flex;
   flex-direction: column;
@@ -48,8 +53,8 @@
 
 /* ========== ICON INSIDE SKILL CARD ========== */
 .skill-card img {
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 0.5rem;
   filter: brightness(0) invert(1); /* Converts dark icons to white */
 }

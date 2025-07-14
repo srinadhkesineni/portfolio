@@ -5,6 +5,54 @@
 /* ========== GLOBAL ========== */
 body,
 html,
+* {
+  font-family: "Inter", sans-serif;
+}
+
+a.contact-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: 1px solid #6b7280;
+  background-color: transparent;
+  color: white !important;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a.contact-btn:hover {
+  background-color: #2a2a2a;
+  color: white !important;
+}
+
+body.light a.contact-btn {
+  background-color: white;
+  border-color: #d1d5db;
+  color: black !important;
+}
+
+body.light a.contact-btn:hover {
+  background-color: #e5e5e5;
+  color: black !important;
+}
+
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .App {
   margin: 0;
   padding: 0;
@@ -54,7 +102,7 @@ body.light {
 
 .navbar nav {
   display: flex;
-  gap: 1rem;
+  gap: 1.6rem;
   flex-wrap: wrap;
 }
 
@@ -154,14 +202,15 @@ body.light .navbar nav a:hover {
 
 .hero-card {
   background-color: #171717;
+  margin-top: 20px;
   padding: 3rem 2rem 2rem;
   border-radius: 16px;
   border-color: #6b7280;
   width: 100%;
-  max-width: 900px;
+  max-width: 1025px;
   text-align: center;
   border: 1px solid #2a2a2a;
-  font-size: 0.9rem;
+  font-size: 16px;
   position: relative;
   transition: background-color 0.4s, border-color 0.4s;
 }
@@ -186,7 +235,7 @@ body.light .hero-card {
 .hero-card h2 {
   margin-top: 63px;
   margin-bottom: 0.2rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
   transition: color 0.4s;
 }
 
@@ -200,7 +249,7 @@ body.light .hero-card h2 {
   align-items: center;
   color: #b0b0b0;
   font-size: 0.8rem;
-  margin: 0.3rem 0 1.2rem;
+  margin: 1.3rem 0 1.2rem;
   padding: 0 0.5rem;
 }
 
@@ -210,8 +259,8 @@ body.light .title-location {
 
 .description {
   color: #6b7280;
-  font-size: 0.93rem;
-  margin: 1rem 0;
+  font-size: 1.03rem;
+  margin: 1rem 0 2rem;
   line-height: 1.6;
   padding: 0;
   width: 100%;
@@ -236,7 +285,7 @@ body.light .description {
 
 .blog-btn,
 .contact-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -276,17 +325,18 @@ body.light .contact-btn:hover {
 
 /* ========== SOCIAL ICONS ========== */
 .social-icons {
-  margin-top: 1.2rem;
+  margin-top: 1.7rem;
   display: flex;
   justify-content: center;
-  gap: 1.3rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .social-icons i {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #6b7280;
   transition: transform 0.2s, color 0.3s;
+  cursor: pointer;
 }
 
 .social-icons i:hover {
@@ -332,4 +382,198 @@ body.light .social-icons i:hover {
   font-size: 0.85rem;
   margin-right: 6px;
   opacity: 0.8;
+}
+
+.footer {
+  /* background-color: #0a0a0a; */
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  /* border-top: 1px solid #333; */
+  font-size: 0.8rem;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  margin: 0 0px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: white;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-img {
+    width: 110px;
+    height: 110px;
+    top: -35px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .navbar nav {
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .hero-card {
+    padding: 2rem 1rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+
+  .typewriter {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+    padding: 15px 10px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .navbar nav {
+    gap: 0.7rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+    top: -25px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .blog-btn,
+  .contact-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .social-icons i {
+    font-size: 1rem;
+    margin: 0 3px;
+  }
+
+  .typewriter {
+    font-size: 0.75rem;
+  }
+}
+
+#contact {
+  scroll-margin-top: 80px;
+}
+
+a.contact-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: 1px solid #6b7280;
+  background-color: transparent;
+  color: white !important;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a.contact-btn:hover {
+  background-color: #2a2a2a;
+  color: white !important;
+}
+
+body.light a.contact-btn {
+  background-color: white;
+  border-color: #d1d5db;
+  color: black !important;
+}
+
+body.light a.contact-btn:hover {
+  background-color: #e5e5e5;
+  color: black !important;
 }
